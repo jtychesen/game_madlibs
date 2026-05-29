@@ -15,7 +15,7 @@ adjective3=input("Enter an adjective (A decription of something): ")
 
 print()  # lager én tom linje
 
-print(f"Today I went to a {adjective1} zoo")
+print(f"Today I went to a {adjective1} fashion show")
 print(f"In an exhibit, I saw a {noun1}")
 print(f"{noun1} was {adjective2} and {verb1}")
 print(f"I was {adjective3}!")
