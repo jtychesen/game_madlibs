@@ -1,27 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <title>Mad Libs Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madlibs V2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="game-box">
-        <h1>Mad Libs Game</h1>
+  <main class="container">
+    <section class="card">
+      <p class="tag">Python project → Web version</p>
+      <h1>Madlibs V2</h1>
+      <p class="subtitle">Fyll inn feltene og lag en norsk original-versjon.</p>
 
-        <input id="adjective1" type="text" placeholder="Enter an adjective">
-        <input id="noun1" type="text" placeholder="Enter a noun">
-        <input id="adjective2" type="text" placeholder="Enter another adjective">
-        <input id="verb1" type="text" placeholder="Enter a verb ending with -ing">
-        <input id="adjective3" type="text" placeholder="Enter one last adjective">
+      <div class="form-grid">
+        <label>
+          Navn på én i familien:
+          <input id="famemeb1" type="text" placeholder="f.eks. Terje">
+        </label>
 
-        <button onclick="createStory()">Create Story</button>
+        <label>
+          Navn på en annen i familien:
+          <input id="famemeb2" type="text" placeholder="f.eks. Ragnar">
+        </label>
 
-        <div id="result"></div>
-    </div>
+        <label>
+          En følelse:
+          <input id="moodWord" type="text" placeholder="f.eks. glad, sint, stressa">
+        </label>
 
-    <script src="script.js"></script>
+        <label>
+          Et sted:
+          <input id="place" type="text" placeholder="f.eks. på taket, i kjelleren">
+        </label>
+
+        <label>
+          Et dyr med en/ei/et foran:
+          <input id="animal" type="text" placeholder="f.eks. en grevling">
+        </label>
+
+        <label>
+          Noe av kroppen:
+          <input id="bodyPart" type="text" placeholder="f.eks. arm, tånegl">
+        </label>
+
+        <label>
+          Et dyr uten en/ei/et foran:
+          <input id="powderAnimal" type="text" placeholder="f.eks. lama, måke">
+        </label>
+
+        <label>
+          En tilfeldig ting:
+          <input id="randomThing" type="text" placeholder="f.eks. vannkoker">
+        </label>
+
+        <label>
+          Et bilmerke:
+          <input id="carBrand" type="text" placeholder="f.eks. BMW">
+        </label>
+
+        <label>
+          En aktivitet:
+          <input id="activity" type="text" placeholder="f.eks. danse, klatre">
+        </label>
+
+        <label>
+          En ting/objekt i flertall:
+          <input id="cargo" type="text" placeholder="f.eks. paller, murstein">
+        </label>
+
+        <label>
+          En kort setning/frase:
+          <input id="phrase" type="text" placeholder="f.eks. Dette går aldri">
+        </label>
+      </div>
+
+      <button onclick="createStory()">Lag historie</button>
+
+      <article id="story" class="story hidden"></article>
+
+      <button id="resetButton" class="reset hidden" onclick="resetGame()">Prøv igjen</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

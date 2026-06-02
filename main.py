@@ -1,22 +1,38 @@
-# This is a word game
-# Words are filled in to create a story
-# Adjective = great, sad   Noun = Thing   verb=something you do
+# Madlibs V2
+# Oppdatert til en norsk original versjon.
 
-RESET = "\033[0m"
-GREEN = "\033[92m"
+famemeb1 = input("Navn på en i familien: ")
+famemeb2 = input("Navn på en annen i familien: ")
+mood_word = input("En følelse (f.eks. glad, sint): ")
+place = input("Et sted (f.eks. i kjelleren, på taket): ")
+animal = input("Et dyr MED en/et foran (f.eks. en grevling, et hamster): ")
+body_part = input("Noe av kroppen (f.eks. arm, tånegl): ")
+powder_animal = input("Et dyr UTEN en/et foran (f.eks. lama, hamster): ")
+random_thing = input("En tilfeldig ting, et objekt: ")
+car_brand = input("Et bilmerke: ")
+activity = input("En aktivitet (f.eks. plystre, svømme): ")
+cargo = input("En ting/objekt i flertall: ")
+phrase = input("En kort setning/frase: ")
 
-print(GREEN, end="")
-
-adjective1=input("Enter an adjective (A decription of something): ")
-noun1=(input("Enter a noun (person,place,thing): "))
-adjective2=input("Enter an adjective (A decription of something): ")
-verb1=input("Enter a verb ending with -ing: ")
-adjective3=input("Enter an adjective (A decription of something): ")
-
-print()  # lager én tom linje
-
-print(f"Today I went to a {adjective1} fashion show")
-print(f"In an exhibit, I saw a {noun1}")
-print(f"{noun1} was {adjective2} and {verb1}")
-print(f"I was {adjective3}!")
-print(RESET, end="")
+print()
+print("Snart skulle Matt, Caroline, Amanda og Matilda til Australia,")
+print(f"og {famemeb1} hadde klart å gjøre avreisen mer kaotisk enn nødvendig.")
+print()
+print(f"Caroline syntes selvfølgelig det var trist at {famemeb1} måtte gjøre ting vanskelig.")  
+print(f"Hun begynte å bli ganske {mood_word}.")
+print()
+print(f"{place.capitalize()} satt Ragnar og prøvde å late som han hadde kontroll på situasjonen.")
+print(f"Han hadde aldri skutt noen før, men denne gangen var det faktisk ikke langt unna")
+print(f"at han fyrte av et varselskudd mot {famemeb1}, fly forbanna.")
+print()
+print(f"Det hjalp heller ikke at alle mente at {famemeb2} måtte sendes avgårde..,")
+print(f"Eller at en {random_thing} plutselig ble behandlet som om den var viktig for reisen.")
+print()
+print(f"Så dukket Nils opp med lastebilen, med planet fullt av {cargo}, og da ble det enda verre.")
+print(f"Like bak ham sto Vibeke og Joakim i {car_brand}en og tuta. Joakim elsket {car_brand} nå.")
+print(f"Vibeke var bak rattet. Joakim kunne ikke kjøre, fordi han inntok tørket {body_part} av {powder_animal} om dagen. ")
+print()
+print(f"Nils kjente egentlig Amanda og Matilda bare så vidt, men mente likevel bestemt")
+print(f"at de måtte lære seg å {activity} før de dro, fordi det visstnok var helt avgjørende å kunne i Australia.")
+print()
+print(f"Nils fikk fortsatt ikke snudd og ropte ut: «{phrase}»")
